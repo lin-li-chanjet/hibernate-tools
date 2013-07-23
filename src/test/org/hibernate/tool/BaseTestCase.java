@@ -105,7 +105,7 @@ public abstract class BaseTestCase extends TestCase {
 	}
 
 	protected void setUp() throws Exception {
-		assertNoTables();
+//		assertNoTables();
 		
 		if(getOutputDir()!=null) {
 			getOutputDir().mkdirs();
@@ -117,7 +117,7 @@ public abstract class BaseTestCase extends TestCase {
 		
 		cleanupOutputDir();
 		
-		assertNoTables();
+//		assertNoTables();
 	}
 
 	protected void cleanupOutputDir() {
