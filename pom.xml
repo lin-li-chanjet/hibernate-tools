@@ -811,6 +811,22 @@
 			</properties>
 		</profile>
 
+		<profile>
+			<id>postgresql92</id>
+			<properties>
+					<jdbc.driverClassName>org.springframework.jdbc.datasource.DriverManagerDataSource</jdbc.driverClassName>
+					<jdbc.driver.groupId>postgresql</jdbc.driver.groupId>
+					<jdbc.driver.artifactId>postgresql</jdbc.driver.artifactId>
+					<jdbc.driver.jdbc.driver.version>9.2-1002.jdbc4</jdbc.driver.jdbc.driver.version>
+				<db.dialect>org.hibernate.dialect.PostgreSQLDialect</db.dialect>
+				<jdbc.driver>org.postgresql.Driver</jdbc.driver>
+				<jdbc.url>jdbc:postgresql://localhost:5432/tooltest</jdbc.url>
+				<jdbc.user>postgres</jdbc.user>
+				<jdbc.pass>postgres</jdbc.pass>
+				<jdbc.isolation />
+			</properties>
+		</profile>
+
 	</profiles>
 
 </project>
